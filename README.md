@@ -1,75 +1,73 @@
-<header>
+# Welcome to My GitHub!
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+### Brief Introduction
 
-# Introduction to GitHub
+I started practicing on HTB Sherlock, and after solving a few exercises, I thought to myself, "Why don't I make one myself?" So, I present to you my first exercise! I hope you enjoy it.(I wanted to upload the full Memory Dump file, but due to size restrictions, I only uploaded 2 images of it.)
 
-_Get started using GitHub in less than an hour._
 
-</header>
+# Backdoor 🚨
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+Test your forensic and incident response skills in this investigative
+challenge!
 
-## Step 1: Create a branch
+## 🕵️ Scenario
 
-_Welcome to "Introduction to GitHub"! :wave:_
+A cyber incident has occurred on a Windows machine, where a hacker
+infiltrated the system and left traces of malicious activity. Your
+mission is to uncover the attack vector, identify persistence
+mechanisms, track attacker connections, and find the malicious payload.
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+## 🎯 Objectives
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+Identify the vulnerable service used for the attack.
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
+Analyze attacker tools and tactics.
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
+Track network connections established by the attacker.
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+Detect persistence methods and registry changes.
 
-![profile-readme-example](/images/profile-readme-example.png)
+Extract critical forensic artifacts including usernames and passwords.
 
-### :keyboard: Activity: Your first branch
+## 🧩 Exercise Details
 
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+You will receive the following investigation artifacts:
 
-   ![code-tab](/images/code-tab.png)
+Memory Dump: "windows.pslist.Pslist.txt" + "windows.netstat.NetStat.txt"  extracted by Volatility.
 
-3. Click on the **main** branch drop-down.
+Sysmon Logs: Investigate attacker events.
 
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
+Registry Comparison Files: Identify persistence mechanisms.
 
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
+PCAP File: Examine network communications.
 
-   ![create-branch-button](/images/create-branch-button.png)
+Security Event Logs: Uncover unauthorized user creation.
 
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
+## 🛠️ Tools Recommended
 
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
-<footer>
+Wireshark (for PCAP analysis)
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+Event Viewer (for log inspection)
 
----
+Your investigative intuition!
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+## 🚀 How to Start
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+Run the interactive forensic challenge script:
 
-</footer>
+python3 challenge.py
+
+Follow the prompts, provide your answers, and use hints when needed.
+
+### 💡 Hints
+
+Use \"hint\" during the questions to get clues about the answers. Think
+creatively and explore different angles during your investigation.
+
+### 📬 Submitting Your Solution
+
+When you\'ve solved all questions, feel free to share feedback or your
+experience at roey6922@gmail.com.
+
+### Good luck and happy investigating! 🕵️‍♂️
