@@ -43,6 +43,8 @@ PCAP File: Examine network communications.
 
 Security Event Logs: Uncover unauthorized user creation.
 
+Walkthrough.pdf: If you are having a little trouble ;)
+
 ## 🛠️ Tools Recommended
 
 
